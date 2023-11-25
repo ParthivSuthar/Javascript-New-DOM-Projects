@@ -16,14 +16,6 @@ elem.forEach(function(val) {
 
 
 
-
-
-
-
-
-
-
-
 // -------------- For only one ELement ---------------///
 // let element1 = document.querySelector('#element1')
 // let elementImage = document.querySelector('#element1 img')
