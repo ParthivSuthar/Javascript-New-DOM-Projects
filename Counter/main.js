@@ -1,44 +1,20 @@
 let buttons = document.querySelectorAll('.btn')
-let number = document.querySelector('#value')
+let value = document.querySelector('#value')
+let count = 0
 
-let numValue = 0
-
-buttons.forEach(function(bt) {
-    bt.addEventListener('click', function(e) {
+buttons.forEach(function(bt){
+    bt.addEventListener('click', function(e){
         if(bt.classList.contains('increase')) {
-            numValue++
-            number.style.color = "green"
+            value.style.color = 'green'
+            count++
         } else if(bt.classList.contains('decrease')) {
-            numValue--;
-            number.style.color = "red"
+            value.style.color = 'red'
+            count--;
         } else if(bt.classList.contains('reset')) {
-            numValue = 0
-            number.style.color = "black"
+            value.style.color = 'black'
+            count = 0;
         }
 
-
-        number.textContent = numValue
+        value.textContent = count
     })
 })
-
-
-
-
-
-// let buttons = document.querySelectorAll('.button');
-// let number = document.querySelector('.number');
-// let numberValue = 0;
-
-// buttons.forEach(function(button) {
-//     button.addEventListener('click', function(e) {
-//         if (button.classList.contains('increase')) {
-//             numberValue++;
-//         } else if (button.classList.contains('decrease')) {
-//             numberValue--;
-//         } else if (button.classList.contains('reset')) {
-//             numberValue = 0;
-//         }
-
-//         number.textContent = numberValue;
-//     });
-// });
